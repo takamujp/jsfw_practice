@@ -1,0 +1,11 @@
+{
+  "name": "angularjs-practice",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "main-bower-files": "^2.5.0"
+  }
+}
