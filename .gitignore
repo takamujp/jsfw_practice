@@ -3,3 +3,5 @@ backbonejs/node_modules
 backbonejs/bower_components
 angularjs/bower_components
 angularjs/node_modules
+vuejs/bower_components
+vuejs/node_modules

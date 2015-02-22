@@ -1,0 +1,18 @@
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body ng-app="memo">
+    <script src="lib/vue.js"></script>
+    <div id="app">
+        <div id="header">
+            <pre id="new-memo" contenteditable="true" v-bind-editable-text="newText"></pre><button id="add" v-on="click: onClickAddButton">+</button>
+        </div>
+        <div id="content">
+            <div class="memo" v-repeat="memo: memos">
+                <pre class="memo-body" contenteditable="true" v-html="memo.text"  v-save-editable-text="memo"></pre>
+                <div class="memo-menu"><div class="remove-button" v-on="click: onClickRemoveButton($index)">x</div></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
