@@ -5,3 +5,5 @@ angularjs/bower_components
 angularjs/node_modules
 vuejs/bower_components
 vuejs/node_modules
+knockoutjs/bower_components
+knockoutjs/node_modules

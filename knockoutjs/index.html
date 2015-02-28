@@ -1,0 +1,20 @@
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body ng-app="memo">
+    <script src="lib/knockout.js"></script>
+    <script src="lib/knockout.mapping-latest.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <div id="app">
+        <div id="header">
+            <pre id="new-memo" contenteditable="true" data-bind="editableText: newText"></pre><button id="add" data-bind="click: onClickAddButton">+</button>
+        </div>
+        <div id="content" data-bind="foreach: data.memos">
+            <div class="memo">
+                <pre class="memo-body" contenteditable="true" data-bind="editableText: text, event: {blur: $parent.onBlurMemoBody}"></pre>
+                <div class="memo-menu"><div class="remove-button" data-bind="click: $parent.onClickRemoveButton">x</div></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
